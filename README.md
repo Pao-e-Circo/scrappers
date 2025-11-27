@@ -1,8 +1,8 @@
-O `theodoro.py` lê o arquivo .pdf de presença de sessão de cada mês especificado `paoecirco.org_attendences_folder`.
+O `theodoro.py` lê o arquivo .pdf de presença de sessão de cada mês especificado em `paoecirco.org_attendences_folder`.
 
 O `ezequiel.py` lê os links do .txt especificados em `paoecirco.org_link.txt_path` e lê, através de scrapping, cada um dos .xlsx dos links.
 
-Ambos salvam os registros na base de dados, vinculado os `concilours` já existentes na base de dados.
+Ambos salvam os registros na base de dados, vinculado os `concilours` já existentes da base.
 
 Para o ano referência de 2025, a base de `councilours` é:
 
