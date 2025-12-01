@@ -1,4 +1,4 @@
-O `theodoro.py` lê o arquivo .pdf de presença de sessão de cada mês especificado em `paoecirco.org_attendences_folder`.
+O `theodoro.py` lê o arquivo .pdf de presença de sessão do último mês especificado em `paoecirco.org_attendences_folder`. O caminho pode ter vários arquivos .pdf, nomeados de `1.pdf` até `12.pdf`, cada um referente à cada mês.
 
 O `ezequiel.py` lê os links do .txt especificados em `paoecirco.org_link.txt_path` e lê, através de scrapping, cada um dos .xlsx dos links.
 
