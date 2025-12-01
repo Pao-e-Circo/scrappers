@@ -2,7 +2,9 @@ from pypdf import PdfReader
 import locale
 import re
 import sqlalchemy
-from sqlalchemy import select, exists
+from datetime import date
+from sqlalchemy import select
+from sqlalchemy.orm import Session
 import difflib
 import os
 from pathlib import Path
@@ -99,7 +101,7 @@ month_name = f"{today.strftime("%B")}"
 throw_exception_if_current_month_already_executed(client, month_name, today.year)
 
 path = get_last_attendence_pdf_full_path()
-last_month = f"{today.year}/{today.month - 1}/{today.day}" 
+last_month = f"{today.month - 1}" 
 
 print(f"O arquivo {path} será processado, ele deve representar o mês {last_month}. Se isso estiver correto, clique qualquer tecla para continuar.")
 input()

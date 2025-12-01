@@ -14,7 +14,7 @@ class Councilour(Base):
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     name: Mapped[str] = mapped_column(sqlalchemy.String, nullable=False)
     phone: Mapped[str] = mapped_column(sqlalchemy.String, nullable=True)
-    email: Mapped[str] = mapped_column(sqlalchemy.String, nullable=False)
+    email: Mapped[str] = mapped_column(sqlalchemy.String, nullable=True)
     photo_url: Mapped[str] = mapped_column(sqlalchemy.String, nullable=False)
     party: Mapped[str] = mapped_column(sqlalchemy.String, nullable=False)
 
